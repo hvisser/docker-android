@@ -17,6 +17,7 @@ RUN mkdir -p /opt/android-sdk/tools &&\
 
 ENV ANDROID_HOME /opt/android-sdk
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+ENV GRADLE_USER_HOME /opt/gradle
 
 RUN mkdir -p /opt/workspace
 WORKDIR /opt/workspace
